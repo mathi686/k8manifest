@@ -1,1 +1,15 @@
-gdh
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nginx-pv-hostpath
+  labels:
+    type: hostpath
+    env: prod
+spec:
+  storageClassName: hostpath
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce  # Corrected case
+  hostPath:
+    path: "/var/tmp"  # Removed trailing slash
