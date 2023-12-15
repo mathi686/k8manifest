@@ -5,6 +5,7 @@ metadata:
   labels:
     env: dev
 spec:
+  persistentVolumeReclaimPolicy: Delete
   storageClassName: nfs
   capacity:
     storage: 2Gi
