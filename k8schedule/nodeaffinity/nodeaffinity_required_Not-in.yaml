@@ -19,12 +19,11 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          
-          prefferdDuringSchedulingIgnoredDuringExecution:  # Corrected field name
+          requiredDuringSchedulingIgnoredDuringExecution:  # Corrected field name
             nodeSelectorTerms:
             - matchExpressions:
               - key: env
-                operator: In
+                operator: NotIn
                 values:
                 - dev-master
                 - prod-worker
