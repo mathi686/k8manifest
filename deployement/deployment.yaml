@@ -5,6 +5,7 @@ metadata:
   labels:
     app: nginx
     env: uat
+  namespace: testns
 spec:
   replicas: 4
   selector:
@@ -23,7 +24,6 @@ spec:
           image: nginx:1.23.0
           ports:
             - containerPort: 80
-
 ---
 apiVersion: v1
 kind: Service
