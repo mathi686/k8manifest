@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testereplicadata1
+  name: testereplicadata2
   labels:
     app: nginx
     env: uat
