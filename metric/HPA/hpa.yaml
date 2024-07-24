@@ -9,4 +9,5 @@ spec:
     name: testereplicadataone
   minReplicas: 3
   maxReplicas: 6
-  targetCPUUtilizationPercentage: 4
+  targetCPUUtilizationPercentage: 1
+  
