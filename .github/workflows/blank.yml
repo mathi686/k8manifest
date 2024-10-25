@@ -7,6 +7,6 @@ jobs:
       - name: print test
         run: echo "hi"
       - name: print one more
-        run: echo "hello"
+        run: echo "helllo"
       
     
