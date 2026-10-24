@@ -28,7 +28,7 @@ metadata:
   name: nginx-svc
   namespace: kh
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: nginx
   ports:
