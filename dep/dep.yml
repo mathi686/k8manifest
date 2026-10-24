@@ -1,9 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 
+
 metadata:
   name: nginx-deployment
   namespace: kh
+  labels:
+   env: prod
 
 spec:
   replicas: 2
